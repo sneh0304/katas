@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 public class Kata {
+	static LinkedHashMap<String, User> user = new LinkedHashMap<String, User>();
     public static String someKataMethod() {
         return "hello, world!";
     }
@@ -12,7 +13,7 @@ public class Kata {
     	try {
 	    	System.out.println("Enter number of Users: ");
 	    	int n = Integer.parseInt(input.readLine());
-	    	HashMap<String, User> user = new HashMap<String, User>(n);
+	    	
 	    	while (n > 0) {
 	    		System.out.println("Enter name of User: ");
 	    		String name = input.readLine();
